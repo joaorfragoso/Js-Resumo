@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+@media (min-width: 820px) {
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(20, 20, 20);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(25, 25, 25);
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.blue_crayola {
+    color: rgb(25, 130, 196);
+}
+
+.oxford_blue {
+    color:#13365f;
+}
+
+.yellow {
+    color:#FBD601;
+}
+
+#fake_side-bar {
+    width: 30%;
+}
+#side-bar {
+    position: fixed;
+    display: inline-block;
+    background-color: rgb(23, 23, 23);
+    width: 30%;
+    height: 100%;
+    padding: 8px 3.43vw;
+    box-sizing: border-box;
+}
+
+#side-bar_mobile {
+    display: none;
+    background-color: rgb(23, 23, 23);
+    width: 100%;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: rgb(171, 103, 212);
+    font-size: 1.15em;
+    transition: margin 0.5s;
+}
+
+#navbar a:hover {
+    color: rgb(155, 62, 212);
+    margin: 10px;
+}
+
+.navbar-title {
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(251, 214, 1);
+    text-align: center;
+    font-size: 32px;
+}
+
+#main-doc {
+    display: inline-block;
+    width: 70%;
+    padding: 48px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+#main-doc h1 {
+    border-bottom:0.1px solid rgba(255, 255, 255, 0.315);
+}
+
+#main-doc h3 {
+    margin-left: 8px;
+}
+
+#main-doc p {
+    margin-left: 8px;
+}
+
+#main-doc a {
+    text-decoration: none;
+    color: rgb(171, 103, 212);
+}
+
+#main-doc a:hover {
+    color: rgb(155, 62, 212)
+}
+
+.code_window {
+    background-color: rgb(20, 20, 20);
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.run_button {
+    background-color: #4CAF50;
+    font-family: "Segoe UI", sans-serif;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 12px;
+    width: 15%;
+}
+
+.run_button:hover {
+    background-color: #059862;
+}
+
+@media (max-width:820px) {
+    html, body {
+        flex-direction: column;
+    }
+
+    #side-bar {
+        display: none;
+    }
+
+    #fake_side-bar {
+        display: none;
+    }
+
+    #side-bar_mobile {
+        display: block;
+    }
+
+    #main-doc {
+        width: auto;
+        padding: 12px;
+    }
+}

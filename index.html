@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+    <title>JS Resumo</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <div id="fake_side-bar"></div>
+    <div id="side-bar">
+        <nav id="navbar">
+            <header><h1 class="navbar-title">JavaScript</h1></header>
+            <a href="#introdução">Introdução</a>
+            <hr>
+            <a href="#história">História</a>
+            <hr>
+            <a href="#front-end">Front-End</a>
+            <hr>
+            <a href="#back-end">Back-End</a>
+            <hr>
+            <a href="#hello_world">Hello World</a>
+        </nav>
+    </div>
+    <div id="side-bar_mobile">
+        <nav id="navbar_mobile">
+            <header><h1 class="navbar-title">JavaScript</h1></header>
+        </nav>
+    </div>
+    <main id="main-doc">
+        <section id="introdução" class="main-section">
+            <header><h1>Introdução</h1></header>
+            <h3>O que é?</h3>
+            <p>
+                JavaScript é a linguagem nativa do navegador, sendo a linguagem mais popular de programação e também de fácil aprendizado, utilizada principalmente para o desenvolvimento web e desenvolvimento de software, podendo ser usada tanto no front-end e no back-end.
+            </p>
+            <h3>Características</h3>
+            <p>
+                É uma linguagem leve, multiplataforma, orientada a objeto, tem uma fácil conexão com o html e css utilizando-se do DOM (Document Object Model).
+            </p>
+            <h3>JavaScript X Java</h3>
+            <p>
+                Mesmo tendo nomes parecidos são linguagens completamente diferentes, possuindo sintaxe, semântica e usos diferentes. O JavaScript teve vários nomes, o primeiro foi Mocha, o segundo foi LiveScript, e por conta da enorme fama do Java mudou seu nome para JavaScript, como um jogo de marketing.
+            </p>
+        </section>
+        <section id="história" class="main-section">
+            <header><h1>História</h1></header>
+            <p>
+                O JavaScript foi criado em 1995 pelo Brendan Eich. Seu primeiro nome foi Mocha e, logo depois passou a ser chamado de LiveScript, e por último ficou conhecido como JavaScript.
+                O primeiro navegador que teve suporte ao JavaScript foi o Netscape, com ele a internet pôde ficar mais dinâmica, tendo mais interação e animações na página.
+            </p>
+            <p>
+                Em 1996, a Netscape começou a trabalhar no ECMA International que visava tornar o JavaScript um padrão do setor. Desde então, o JavaScript padronizado é chamado de ECMAScript e especificado sob a ECMA-262, cuja última edição (décima primeira, ES2020) está disponível desde junho de 2020.
+            </p>
+            <p>
+                A popularidade do JavaScript aumentou ainda mais com o surgimento do <a href="https://nodejs.org/pt-br/" target="_blank">Node.js</a>, o interpretador multiplataforma mais popular de ambiente de execução JavaScript fora do navegador. Node.js foi criado utilizando o V8 JavaScript Engine permitindo que os desenvolvedores utilizem o JavaScript como linguagem de script para automatizar as coisas em um PC e criar servidores HTTP e WebSocket totalmente funcionais.
+            </p>
+        </section>
+        <section id="front-end" class="main-section">
+            <header><h1>Front-End</h1></header>
+            <p>
+                 Entre as incontáveis funções do JavaScript no front-end, as principais são fazer as interações e as animações do site, muitas dessas interações são feitas pelo uso do DOM (Document Object Model).
+                 Como o JavaScript já é uma linguagem nativa dos navegadores não é necessário nenhuma ferramenta para a execução de seus códigos na parte do front-end.
+            </p>
+            <p>
+                Para facilitar um pouco o desenvolvimento de sites existem alguns frameworks voltados ao uso do HTML, CSS e <strong>JavaScript</strong>
+            </p>
+            <h3>Frameworks:</h3>
+            <ul>
+                <li>React</li>
+                <li>Angular</li>
+                <li>AngularJS</li>
+                <li>Vue.js</li>
+                <li>Bootstrap</li>
+            </ul>
+        </section>
+        <section id="back-end" class="main-section">
+            <header><h1>Back-End</h1></header>
+            <p>
+                No back-end o JavaScript tem o mesmo papel de outras linguagens de programação back-end, como, fazer a integração, gerenciamento de dados, tratamento das informações recebidas dos formulários, e entre outros.
+            </p>
+            <p>
+                Para o JavaScript poder atuar no back-end é necessário o uso do <a href="https://nodejs.org/pt-br/" target="_blank">Node.js</a> para a execução de seus códigos fora de um navegador Web, sendo ele um software de código aberto, multiplataforma, baseado no interpretador V8 do Google.
+            </p>
+        </section>
+        <section id="hello_world" class="main-section">
+            <header><h1>Hello World</h1></header>
+            <p>
+                O "Hello World" é um exemplo clássico usado em qualquer linguagem para demonstrar como é feito um código que mostra um "Hello World" em seu console ou sua tela.
+            </p>
+            <p>
+                Por exemplo, ficaria assim um código no JavaScript que mostra um "Hello World" em seu site:
+            </p>
+            <div class="code_window">
+                <code>&ltscript></code><br>
+                <code><span class="blue_crayola">window</span>.<span class="oxford_blue">alert</span>("<span class="yellow">Hello World!</span>")</code><br>
+                <code>&lt/script></code>
+            </div>
+            <button class="run_button" onclick="run()">Run</button>
+            <p>
+                A tag <code>&ltscript></code> é uma tag HTML e é necessária para a execução do código.
+            </p>
+            <p>
+                No trecho <code>window.alert("Hello World!")</code> o comando window se refere a janela do navegador, alert() é uma função que executa um alerta com a mensagem que está dentro do parentêses.
+            </p>
+        </section>
+    </main>
+</body>
+<script>
+    function run() {
+        window.alert("Hello World!")
+    }
+</script>
+</html>
