@@ -42,13 +42,13 @@ html, body {
 }
 
 #fake_side-bar {
-    width: 30%;
+    width: 25%;
 }
 #side-bar {
     position: fixed;
     display: inline-block;
     background-color: rgb(23, 23, 23);
-    width: 30%;
+    width: 25%;
     height: 100%;
     padding: 8px 3.43vw;
     box-sizing: border-box;
@@ -81,7 +81,7 @@ html, body {
 
 #main-doc {
     display: inline-block;
-    width: 70%;
+    width: 75%;
     padding: 48px;
     box-sizing: border-box;
     text-align: justify;
